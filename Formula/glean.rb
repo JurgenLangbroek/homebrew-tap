@@ -10,7 +10,7 @@ class Glean < Formula
 
   on_macos do
     url "https://github.com/JurgenLangbroek/glean-cli/releases/download/v0.1.0/glean-cli_0.1.0_darwin_all.tar.gz"
-    sha256 "5b4c23882417d876ad46880846ee42f475632ee741adfbfb8647307f815e161f"
+    sha256 "0431f0d188d0a0de12b35f60c4823ecb265b2857199c6c74c04a7e3338162ef6"
 
     define_method(:install) do
       bin.install "glean"
@@ -20,14 +20,14 @@ class Glean < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/JurgenLangbroek/glean-cli/releases/download/v0.1.0/glean-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "0644851b991b965996fc3efd8eece529b4a20b3645ea11a933cd515f7ce07c78"
+      sha256 "dd9e5930535dbaed3a7275848ca56f5a81da721b7e7c08f0e26e6847a6c59f53"
       define_method(:install) do
         bin.install "glean"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/JurgenLangbroek/glean-cli/releases/download/v0.1.0/glean-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "027c33479c16bcf5d6eb37de78d54ee7edecdfa16430bfe4b518b001a48c286b"
+      sha256 "02bcafcc574971f7af61c49a286e652249567fdcfa96dfe3054645585342ed6d"
       define_method(:install) do
         bin.install "glean"
       end
